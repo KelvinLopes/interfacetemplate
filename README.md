@@ -1,12 +1,26 @@
 # Interface Template 🖥️ 📱 💻
 
 Desenvolvida em ReactJS, esse projeto visa ser maleavel para se adaptar a futuros projetos semelhantes a essa interface.
-Os cards podem ser alterados falcimente e incrementar novas opções ou recursos por exemplo.
+Os cards podem ser alterados falcimente e incrementar novas opções ou recursos.
 
+A página de cards, ainda é estática, não tem nenhum componente que se encarregue de gerá los a partir de um array
+com os dados inseridos nele por exemplo para essa fase inicial. Porém vou trabalhar neste recurso em breve.
+
+Page Home
+<p align-self="center">
+<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/home.png" />
+</p>
+
+Page Cards
+<p align-self="center">
+<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/Cards.png" />
+</p>
 
 ## Tecnologias 🚙 🔌 ✨
 
 * ReactJS
+
+* React Icons
 
 * ESLint
 
@@ -22,7 +36,7 @@ Os cards podem ser alterados falcimente e incrementar novas opções ou recursos
 
 ## Imagens 🎴
 
-As imagens são de exemplo, assim como assunto.
+As imagens são de exemplo, assim como os assuntos.
 
 **Fonte das imagens: Pixabay**
 
