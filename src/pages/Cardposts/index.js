@@ -37,7 +37,7 @@ export default class CardPosts extends Component {
           </Description>
         </Content>
             <FooterCard>
-            <Link to="#"><h5>Ver mais desse dev</h5></Link>
+            <Link to="/devs/post/frontend"><h5>Ver mais desse dev</h5></Link>
             </FooterCard>
         </Card>
 
