@@ -1,6 +1,6 @@
 # Interface Template 🖥️ 📱 💻
 
-Desenvolvida em ReactJS, esse projeto visa ser maleável para se adaptar a futuros projetos semelhantes a essa interface.
+Desenvolvido em ReactJS, esse projeto visa ser maleável para se adaptar a futuros projetos semelhantes a essa interface.
 Os cards podem ser alterados facilmente e incrementar novas opções ou recursos.
 
 A página de cards, ainda é estática, não tem nenhum componente que se encarregue de gerá los a partir de um array
