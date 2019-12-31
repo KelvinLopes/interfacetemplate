@@ -43,3 +43,14 @@ As imagens são de exemplo, assim como os assuntos.
 ## O que tem que melhorar 🤔 ?
 
 Tornar a docker da página home, responsiva ou apresentar uma forma diferente para o mobile.
+
+## Como usar?
+
+* Fazer o download do repositório ou o clone,
+
+* Ter o ambiente preparado para desenvolvimento ReactJs,
+
+* Acessar no terminal a pasta do projeto e executar yarn para instalar as dependências
+
+⚠️ Projeto em desenvolvimento...
+
