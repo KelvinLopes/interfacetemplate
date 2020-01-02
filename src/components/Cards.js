@@ -8,7 +8,7 @@ const Card = styled.div`
   grid-row-gap: 25px;
   grid-column-gap: 50px;
   flex: 1 0 auto;
-  background: #21222c;
+  background: rgba(33, 34, 44, 1);
   border-radius: 16px 16px 16px 16px;
   max-width: 300px;
   margin: 90px auto;
@@ -18,6 +18,7 @@ const Card = styled.div`
     animation-name: 'doughnuts';
     animation-duration: 2s;
   }
+
 
   h1 {
     font-family: roboto;

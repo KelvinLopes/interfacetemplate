@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonBack = styled.button`
+const ButtonBackCards = styled.button`
 
 
   top: 20px;
@@ -9,7 +9,7 @@ const ButtonBack = styled.button`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: absolute;
+  position: fixed;
 
   background: none;
   outline: none;
@@ -30,4 +30,4 @@ const ButtonBack = styled.button`
 
 `;
 
-export default ButtonBack;
+export default ButtonBackCards;

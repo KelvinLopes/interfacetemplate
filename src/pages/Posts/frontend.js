@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Content, Header, Description } from './style';
 import Container from './../../components/Container';
-import ButtonBack from '../../components/ButtonBack';
+import ButtonBackPost from '../../components/ButtonBackPost';
+import StatusBar from '../../components/StatusBar';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
@@ -13,14 +14,17 @@ export default class Main extends Component {
   render() {
     return(
       <Container>
-        <ButtonBack>
+          <StatusBar>
+        <ButtonBackPost>
           <Link to="/devs/cardposts">
           <FaArrowCircleLeft  size={48} color="#ffff"/>
           </Link>
-        </ButtonBack>
+        </ButtonBackPost>
+        <h1>Front End</h1>
+        </StatusBar>
       <Content>
         <Header>
-          <h1>Front End</h1>
+
           <img src={FrondEndImg} alt="Dev"/>
         </Header>
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Container from './../../components/Container';
 import Card from './../../components/Cards';
 import FooterCard from './../../components/FooterCard';
-import ButtonBack from '../../components/ButtonBack';
+import ButtonBackCards from '../../components/ButtonBackCards';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import { Content, Header, Description } from './style';
 import { Link } from 'react-router-dom';
@@ -18,11 +18,11 @@ export default class CardPosts extends Component {
     return(
 
       <Container>
-         <ButtonBack>
+         <ButtonBackCards>
           <Link to="/">
           <FaArrowCircleLeft  size={48} color="#ffff"/>
           </Link>
-       </ButtonBack>
+       </ButtonBackCards>
          <Card>
          <Header>
             <h1>Front End</h1>

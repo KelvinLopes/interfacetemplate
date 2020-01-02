@@ -9,7 +9,6 @@ const FooterCard = styled.div`
   grid-column: 50px;*/
   flex: 1 0 auto;
   background: #21222c;
-  /*border-radius: 4px 4px 4px 4px;*/
   max-width: 800px;
   text-align: center;
   vertical-align: middle;
@@ -17,6 +16,7 @@ const FooterCard = styled.div`
   max-width: 300px;
   position: relative;
   padding: 2px 0 10px 0;
+  border-radius: 10px 10px 10px 10px;
 
 
   h5 {

@@ -9,7 +9,6 @@ const Container = styled.div`
   background: #282a36;
   flex-wrap: wrap;
 
-
   h1 {
     font-family: roboto;
     font-size: 20px;

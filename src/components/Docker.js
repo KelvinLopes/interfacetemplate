@@ -44,18 +44,6 @@ ul {
 
 li{
 
-  /*display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-  grid-gap: 20px;
-  grid-row-gap: 25px;
-  grid-column-gap: 50px;
-  flex: 1 0 auto;
-  border-radius: 50px;
-  background: orange;
-  margin: 1px 5px auto;
-  width: 200px;
-  height: 50px;*/
-
   display: flex;
   align-items: center;
   justify-content: center;

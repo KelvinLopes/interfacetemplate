@@ -8,11 +8,34 @@ export const Content = styled.div`
   flex-direction: column;
   flex: 1 0 auto;
   max-width: 100vw;
-
-
 `;
 
 
+export const StatusBar = styled.div`
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100vw;
+  height: 10vh;
+  background: rgba(33, 34, 44, 0.8);
+
+  top: 0;
+
+  position: fixed;
+
+  h1 {
+    font-family: roboto;
+    font-size: 48px;
+    color:#039846;
+    margin: 65px auto;
+    text-align: center;
+  }
+
+`
+;
 export const Header = styled.div`
 
   display: flex;
@@ -21,20 +44,14 @@ export const Header = styled.div`
   flex-direction: column;
   flex: 1 0 auto;
   max-width: 100vw;
-
-  h1 {
-    font-family: roboto;
-    font-size: 48px;
-    color:#039846;
-    margin: 20px auto;
-  }
+  top: 80px;
 
 
 img {
 
   width: 100%;
   height: 70vh;
-  margin: 30px auto 0;
+  margin: 80px auto 0;
   border-radius: 20px;
 }
 `;

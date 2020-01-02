@@ -24,6 +24,7 @@ export const Content = styled.div`
 
   background: #21222c;
   max-width: 300px;
+  border-radius: 10px 10px 10px 10px;
 
   h1 {
     font-family: roboto;
@@ -49,5 +50,4 @@ p {
 
   text-align: center;
 }
-
 `;
