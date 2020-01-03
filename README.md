@@ -54,3 +54,12 @@ Tornar a docker da página home, responsiva ou apresentar uma forma diferente pa
 
 ⚠️ Projeto em desenvolvimento...
 
+## Updates
+
+Adição da status bar
+Separação dos botões retornar para a home do botão retornar para os cards, ou seja agora são botões distintos
+
+<p align-self="center">
+<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/statusbar.gif" />
+</p>
+
