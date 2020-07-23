@@ -1,4 +1,34 @@
 {
+"cardsdevs": [
+{
+    "id": 1,
+    "title": "Front End",
+    "resume": "Cria a interface vista pelas pessoas, proporcionando também o interagir com ela.",
+    "image": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/frontend.7deb59ed.png",
+    "link": "/devs/post/frontend"
+},
+{
+    "id": 2,
+    "title": "Back End",
+    "resume": "Cuida da parte que as pessoas não podem ver, ou seja são os scripts abaixo da interface front end, as regras de negócio da aplicação.",
+    "image": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/backend.9012fa95.png",
+    "link": "#"
+},
+{
+    "id": 3,
+    "title": "UI Design",
+    "resume": "Responsável por criar a interface, além de se preocupar também de como ela será integrada entre o usuário.",
+    "image": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/designer.0c1fe8a5.png",
+    "link": "#"
+},
+{
+    "id": 4,
+    "title": "UX Design",
+    "resume": "Responsável pela identidade visual, e organização de informações de um produto e serviços a serem desenvolvidos.",
+    "image": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/ux.c2f14035.webp",
+    "link": "#"
+}
+],
 "menuicons": [
   {
    "id": 1,
@@ -11,6 +41,52 @@
    "iconImg": "",
    "name": "Devs",
    "link": "/devs/cardposts"
+  }
+],
+"liliraVersion": [
+  {
+    "id": 1,
+    "version": "alfa",
+    "img": "",
+    "message": "Espero poder ajudar você!"
+  }
+],
+"liliraname": [
+  {
+    "id": 1,
+    "name": "Meu nome é Lilira, sua assistente nesse app.",
+    "avatar": ""
+  }
+],
+"liliraimgsthisapp": [
+  {
+    "id": 1,
+    "img1": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/frontend.7deb59ed.png",
+    "img2": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/backend.9012fa95.png",
+    "img3": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/designer.0c1fe8a5.png",
+    "img4": "https://3000-b2a63515-9a92-43fa-be87-3b9677e251e2.ws-us02.gitpod.io/static/media/ux.c2f14035.webp"
+  }
+],
+"lilirahelpcomands": [
+  {
+    "id": 1,
+    "title": "Interaja comigo com frases:",
+    "image": "",
+    "phrase1": "Bom dia",
+    "phrase2": "Boa tarde",
+    "phrase3": "Boa noite",
+    "phrase4": "Qual sua versão?",
+    "phrase5": "Receber ajuda",
+    "phrase6": "Qual é seu nome?",
+
+    "comandsTitle": "Interaja comigo com 'linhas de comando' ",
+    "imagelinecomand": "",
+    "listcarddevs": "--list Lilira devs",
+    "pushfronted": "--push Lilira front_end",
+    "versioncomand": "--Lilira --version",
+    "help": "--help",
+
+    "message": "Em breve poderei ser capaz de mais coisas!"
   }
 ]
 }

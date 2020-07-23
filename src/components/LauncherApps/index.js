@@ -6,12 +6,20 @@ import { MdBlurCircular } from 'react-icons/md';
 
 export default function Launcher() {
 
+  /*
+  function handleClickHiddenLauncherApp() {
+
+    handleHiddenLauncherApp();
+  }
+*/
+
   function handleHiddenLauncherApp() {
 
     const launcherApp = document.querySelector('.launcher-apps');
     const buttonUp = document.querySelector('.up-button');
     const buttonDown = document.querySelector('.down-button');
     const bodyMenu = document.querySelector('.body-menu');
+
 
     launcherApp.style.display = 'none';
     buttonUp.style.display = 'flex';
@@ -27,6 +35,7 @@ export default function Launcher() {
     const buttonUp = document.querySelector('.up-button');
     const buttonDown = document.querySelector('.down-button');
     const bodyMenu = document.querySelector('.body-menu');
+
 
     launcherApp.style.display = 'block';
     buttonUp.style.display = 'none';
@@ -67,9 +76,10 @@ export default function Launcher() {
 
   return(
     <>
-      <Aside className = "body-menu">
+      <Aside  className = "body-menu">
         <section className="launcher-apps">
           <Input
+            className="input"
             type="text"
             placeholder="Procure um app"
             value={searchTerm}
@@ -78,7 +88,6 @@ export default function Launcher() {
             <ul>
               {
                 searchResults.map(icon => (
-                  <>
                     <li key={icon.id}>
                       <Link to={icon.link}>
                         <img className="icone-img" style={{ height: 48, width: 60 }}
@@ -88,7 +97,6 @@ export default function Launcher() {
                         <span><h5>{icon.name}</h5></span>
                       </Link>
                     </li>
-                  </>
                 ))
               }
             </ul>
