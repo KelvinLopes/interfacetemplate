@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Content, Header, Description } from './style';
-import Container from './../../components/Container';
+import Container from '../../components/Container';
 import ButtonBackPost from '../../components/ButtonBackPost';
 import StatusBar from '../../components/StatusBar';
 import { FaArrowCircleLeft } from 'react-icons/fa';

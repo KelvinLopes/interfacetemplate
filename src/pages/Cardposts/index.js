@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Container from './../../components/Container';
+import Container from '../../components/Container';
 import Card from './../../components/Cards';
 import FooterCard from './../../components/FooterCard';
 import ButtonBackCards from '../../components/ButtonBackCards';
