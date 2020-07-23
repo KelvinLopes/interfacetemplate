@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Aside = styled.div`
 
-.laucher-apps {
+.launcher-apps {
 
   display: none;
 }
@@ -38,7 +38,11 @@ export const Aside = styled.div`
 }
 
 h5 {
-
+  text-align: center;
+  margin: 0 auto;
+  font-family: ubuntu;
+  font-size: 12px;
+  padding: 0.5px;
   color: #fff;
 }
 
@@ -321,16 +325,19 @@ export const ButtonsControl = styled.div`
 
   display: flex;
   flex-direction: row;
-  align-itmes: center;
+  align-items: center;
   justify-content: center;
   margin: calc(0, 25px);
   left: 0;
   right: 0;
   top: auto;
   bottom: 5px;
-  padding: 10px;
   user-select: none;
   z-index: 1;
+
+  width: auto;
+  height: 5vh;
+  position: fixed;
 
   @media screen and (max-width: 320px) {
 

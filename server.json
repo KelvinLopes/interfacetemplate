@@ -1,0 +1,16 @@
+{
+"menuicons": [
+  {
+   "id": 1,
+   "iconimg": "",
+   "name": "Home",
+   "link": "/"
+  },
+  {
+   "id": 2,
+   "iconImg": "",
+   "name": "Devs",
+   "link": "/devs/cardposts"
+  }
+]
+}
