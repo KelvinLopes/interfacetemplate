@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import {  Aside, Input, ButtonsControl } from './styles';
+import { Container, Aside, Input, ButtonsControl } from './styles';
 import api from '../../service/api';
 import { MdBlurCircular } from 'react-icons/md';
 
@@ -8,8 +8,7 @@ export default function Launcher() {
 
   /*
   function handleClickHiddenLauncherApp() {
-
-    handleHiddenLauncherApp();
+      handleHiddenLauncherApp();
   }
 */
 
@@ -36,10 +35,10 @@ export default function Launcher() {
     const buttonDown = document.querySelector('.down-button');
     const bodyMenu = document.querySelector('.body-menu');
 
-
     launcherApp.style.display = 'block';
     buttonUp.style.display = 'none';
     buttonDown.style.display = 'flex';
+    bodyMenu.style.width = '100wwh';
     bodyMenu.style.height = '100vh';
     bodyMenu.style.top = 'auto';
     bodyMenu.style.background = 'rgba(1, 1, 1, 0.8)';

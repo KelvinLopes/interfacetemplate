@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Aside = styled.div`
+export const Aside = styled.aside`
 
+background: rgba(1, 1, 1, 1);
 .launcher-apps {
 
   display: none;

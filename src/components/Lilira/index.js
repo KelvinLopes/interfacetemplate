@@ -37,6 +37,9 @@ export default function Lilira() {
 
   function clearLiliraActions() {
 
+     const liliraAvatar = document.querySelector('.lilira-avatar');
+     liliraAvatar.style.display = 'block';
+
     setLiliraVersion([]);
     setLiliraName([]);
     setTalkLilira([]);
@@ -58,7 +61,23 @@ export default function Lilira() {
 
       if(talkLilira === 'Qual sua versão?' || talkLilira === '--Lilira --version') {
 
-        setLiliraAvatar(data);
+        setLiliraVersion(data);
+
+        const respLiliraVersion = document.querySelector('.resp-lilira-version');
+        const liliraAvatar = document.querySelector('.lilira-avatar');
+        const imgVersionLilira = document.querySelector('.version-img-lilira');
+
+        liliraAvatar.style.display = 'none';
+        respLiliraVersion.style.display = 'block';
+        imgVersionLilira.style.display = 'block';
+
+
+        setTimeout(() => {
+          setReplyLilira('');
+          setTalkLilira('');
+          imgVersionLilira.innerHTML = 'none';
+          respLiliraVersion.innerHTML = '';
+        },8000)
       }
 
       if(talkLilira === 'Qual é seu nome?') {
@@ -72,6 +91,9 @@ export default function Lilira() {
     }
 
     if(talkLilira === 'Bom dia' || talkLilira === 'Boa tarde' || talkLilira === 'Boa noite') {
+
+       const respLilira = document.querySelector('.resp-lilira');
+       respLilira.style.display = 'block';
 
      setReplyLilira('Em breve saberei responder');
     }
@@ -148,8 +170,69 @@ export default function Lilira() {
   return(
     <Container>
       <content>
+        <Card className="card">
+          <div>
+            <Header>
+              <h5 className="resp-lilira">{`${replyLilira}`}</h5>
+
+
+            { liliraName.map(lilira => (
+              <h5>{lilira.name}</h5>
+            )) }
+
+
+              {/**lilira images map */}
+
+              { liliraVersion.map(lilira => (
+                <>
+                  <h5 className="resp-lilira-version" key={lilira.id}>Estou na {lilira.version} {lilira.message}</h5>
+                  <img className="version-img-lilira" src={lilira.img} alt="Lilira" />
+                </>
+              )) }
+
+            </Header>
+            <CardImg>
+              { liliraAvatar.map( lilira => (
+                <img key={lilira.id} className="lilira-avatar" src={lilira.avatar} alt="Lilira" />
+              ))}
+            </CardImg>
+            <Form>
+              <Input
+                className="input"
+                type="text"
+                label="speaker"
+                placeholder="Escreva algo aqui, para eu te ajudar"
+                value={talkLilira}
+                onChange={handleInputChange}
+                onClick={clearLiliraActions}
+              />
+            </Form>
+            <Card className="card-lilira">
+                {cardsDevLilira.map(lilira => (
+                  <li key={lilira.id}>
+                    <Header>
+                      <h1>{lilira.title}</h1>
+                    </Header>
+                    <CardImg>
+                      <img src={lilira.image} alt={lilira.title} />
+                    </CardImg>
+                    <Description>
+                      <p>
+                        {lilira.resume}
+                      </p>
+                    </Description>
+                      <LinkCard>
+                        <Link to={lilira.link} target="_blank">Ver mais desse(a) dev</Link>
+                      </LinkCard>
+                  </li>
+                ))}
+            </Card>
+            <div className="space"></div>
+           </div>
+        </Card>
 
       </content>
+      <LanchApps />
     </Container>
   );
 }

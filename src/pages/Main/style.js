@@ -7,7 +7,13 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   flex: 1 0 auto;
-  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  background: #1f2531;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0 auto;
 
 
   h1 {
@@ -21,10 +27,8 @@ export const Content = styled.div`
 img {
 
   width: 100vw;
-  height: 70vh;
-  margin: 30px auto 0;
-  filter: opacity(50%);
-  box-shadow: 1px 2px 20px 5px #fff;
+  height: 100vh;
+  margin: 0 auto;
 }
 `;
 

@@ -11,7 +11,6 @@ export default function Main() {
       <Container>
       <div>
           <Content>
-            <h1>Devs</h1>
             <img src={DevImg} alt="Dev"/>
           </Content>
         <LauncherApps />
