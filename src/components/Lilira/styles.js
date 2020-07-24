@@ -106,12 +106,15 @@ export const CardImg = styled.div`
   justify-content: space-around;
   flex-direction: row;
   outiline: none;
+  margin: 50px auto;
+  width: auto;
+  heigth: auto;
 
-  .lilira-img {
+  .lilira-img img{
 
-    width: 300px;
-    max-width: 100%;
-    heigth: 50vh;
+    width: auto;
+    max-width: auto;
+    heigth: 7vh;
     margin: 0 auto;
     flex: 1 0 auto;
     outiline: none;
@@ -235,7 +238,7 @@ export const Header = styled.div`
     color: green;
     font-size: 20px;
     text-align: center;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 
     display: flex;

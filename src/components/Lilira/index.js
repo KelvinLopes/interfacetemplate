@@ -52,14 +52,25 @@ export default function Lilira() {
     const message = 'Me desculpe, mas não foi possível conectar.'
     async function resLilira() {
 
-      const response = await api.get('liliraVersion');
+      const responseAvatar = await api.get('liliraname');
+      const dataAvatar = responseAvatar.data.map(lilira => ({
+        ...lilira,
+      }))
+
+      setLiliraAvatar(dataAvatar);
+
+      if(talkLilira === 'Qual é seu nome?') {
+
+       setLiliraName(dataAvatar);
+    }
+
+      if(talkLilira === 'Qual sua versão?' || talkLilira === '--Lilira --version') {
+
+        const response = await api.get('liliraVersion');
       const data = response.data.map(lilira => ({
         ...lilira,
       }))
 
-      setLiliraAvatar(data);
-
-      if(talkLilira === 'Qual sua versão?' || talkLilira === '--Lilira --version') {
 
         setLiliraVersion(data);
 
@@ -80,15 +91,6 @@ export default function Lilira() {
         },8000)
       }
 
-      if(talkLilira === 'Qual é seu nome?') {
-
-      const response = await api.get('liliraname');
-      const data = response.data.map(lilira => ({
-        ...lilira,
-      }))
-
-       setLiliraName(data);
-    }
 
     if(talkLilira === 'Bom dia' || talkLilira === 'Boa tarde' || talkLilira === 'Boa noite') {
 
@@ -101,9 +103,12 @@ export default function Lilira() {
      if(talkLilira === 'Receber ajuda' || talkLilira === '--help' ) {
 
       const response = await api.get('lilirahelpcomands');
+      const cardHelpLilira = document.querySelector('.help-lilira');
       const data = response.data.map(lilira => ({
         ...lilira,
       }))
+
+      cardHelpLilira.style.display = 'block';
 
        setCardsHelpLilira(data);
     }
@@ -146,19 +151,16 @@ export default function Lilira() {
        setCardsDevLilira(data);
 
        setTimeout(() => {
-        setTalkLilira('');
          input.style.display = 'block';
-       }, 1000);
+         setTalkLilira('');
+       }, 6000);
 
-        setTimeout(() => {
-          setReplyLilira('');
-         }, 6000);
 
        return setReplyLilira('Aqui está o cards de Devs')
     }
 
 
-      if(!response) {
+      if(!responseAvatar) {
         return setReplyLilira(message);
       }
 
@@ -177,7 +179,7 @@ export default function Lilira() {
 
 
             { liliraName.map(lilira => (
-              <h5>{lilira.name}</h5>
+              <h5 className="resp-lilira">{lilira.name}</h5>
             )) }
 
 
@@ -193,7 +195,7 @@ export default function Lilira() {
             </Header>
             <CardImg>
               { liliraAvatar.map( lilira => (
-                <img key={lilira.id} className="lilira-avatar" src={lilira.avatar} alt="Lilira" />
+                <img key={lilira.id} className="lilira-avatar lilira-img" src={lilira.avatar} alt="Lilira" />
               ))}
             </CardImg>
             <Form>
@@ -224,6 +226,73 @@ export default function Lilira() {
                       <LinkCard>
                         <Link to={lilira.link} target="_blank">Ver mais desse(a) dev</Link>
                       </LinkCard>
+                  </li>
+                ))}
+            </Card>
+
+
+            <Card className="help-lilira">
+                {cardsHelpLilira.map(lilira => (
+                  <li key={lilira.id}>
+                    <Header>
+                      <h1>{lilira.title}</h1>
+                    </Header>
+                    <CardImg>
+                      <img src={lilira.image} alt={lilira.title} />
+                    </CardImg>
+                    <Description>
+                      <p>
+                        {lilira.phrase1}
+                      </p>
+
+                       <p>
+                        {lilira.phrase2}
+                      </p>
+
+                       <p>
+                        {lilira.phrase3}
+                      </p>
+
+                       <p>
+                        {lilira.phrase4}
+                      </p>
+
+                       <p>
+                        {lilira.phrase5}
+                      </p>
+
+                       <p>
+                        {lilira.phrase6}
+                      </p>
+
+                    <Header>
+                      <h1>{lilira.comandsTitle}</h1>
+                    </Header>
+
+                    <CardImg>
+                      <img src={lilira.imagelinecomand} alt={lilira.title} />
+                    </CardImg>
+
+                       <p>
+                        {lilira.listcarddevs}
+                      </p>
+
+                      <p>
+                        {lilira.pushfronted}
+                      </p>
+
+                      <p>
+                        {lilira.versioncomand}
+                      </p>
+
+                      <p>
+                        {lilira.help}
+                      </p>
+
+                       <p>
+                        {lilira.message}
+                      </p>
+                    </Description>
                   </li>
                 ))}
             </Card>

@@ -4,6 +4,10 @@ import { Container, Aside, Input, ButtonsControl } from './styles';
 import api from '../../service/api';
 import { MdBlurCircular } from 'react-icons/md';
 
+import Home from '../../assets/icons/home.png';
+import Devs from '../../assets/icons/devs.png';
+import Lilira from '../../assets/icons/lilira.png';
+
 export default function Launcher() {
 
   /*
@@ -89,7 +93,7 @@ export default function Launcher() {
                 searchResults.map(icon => (
                     <li key={icon.id}>
                       <Link to={icon.link}>
-                        <img className="icone-img" style={{ height: 48, width: 60 }}
+                        <img className="icone-img" style={{ height: 60, width: 60 }}
                         src={icon.iconImg} title={icon.name}
                         alt={icon.name}
                         />
