@@ -53,7 +53,7 @@
   {
     "id": 1,
     "version": "versão alfa",
-    "img": "",
+    "img": "https://media.giphy.com/media/NzSUEgbTWB7TW/giphy.gif",
     "message": "espero poder ajudar você!"
   }
 ],
@@ -77,7 +77,7 @@
   {
     "id": 1,
     "title": "Interaja comigo com frases:",
-    "image": "",
+    "image": "https://media.giphy.com/media/xUOxfjsW9fWPqEWouI/giphy.gif",
     "phrase1": "Bom dia",
     "phrase2": "Boa tarde",
     "phrase3": "Boa noite",
@@ -86,7 +86,7 @@
     "phrase6": "Qual é seu nome?",
 
     "comandsTitle": "Interaja comigo com 'linhas de comando' ",
-    "imagelinecomand": "",
+    "imagelinecomand": "https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif",
     "listcarddevs": "--list Lilira devs",
     "pushfronted": "--push Lilira front_end",
     "versioncomand": "--Lilira --version",
