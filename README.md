@@ -3,18 +3,8 @@
 Desenvolvido em ReactJS, esse projeto visa ser maleável para se adaptar a futuros projetos semelhantes a essa interface.
 Os cards podem ser alterados facilmente e incrementar novas opções ou recursos.
 
-A página de cards, ainda é estática, não tem nenhum componente que se encarregue de gerá los a partir de um array
-com os dados inseridos nele por exemplo para essa fase inicial. Porém vou trabalhar neste recurso em breve.
+A página de cards, não é mais estática,mas tem suas informações geradas sob o json server que futuramente se tornará uma api real.
 
-Page Home
-<p align-self="center">
-<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/home.png" />
-</p>
-
-Page Cards
-<p align-self="center">
-<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/Cards.png" />
-</p>
 
 ## Tecnologias 🚙 🔌 ✨
 
@@ -34,15 +24,17 @@ Page Cards
 
 * Grid
 
+* Json server
+
+* Axios 
+
 ## Imagens 🎴
 
-As imagens são de exemplo, assim como os assuntos.
+As imagens são de exemplo, assim como os assuntos, exceto a Lilira que desenvolvi seu desenho do zero.
 
 **Fonte das imagens: Pixabay**
 
 ## O que tem que melhorar 🤔 ?
-
-Tornar a docker da página home, responsiva ou apresentar uma forma diferente para o mobile.
 
 ## Como usar?
 
@@ -52,6 +44,18 @@ Tornar a docker da página home, responsiva ou apresentar uma forma diferente pa
 
 * Acessar no terminal a pasta do projeto e executar yarn para instalar as dependências
 
+## Dicas
+
+Se tiver problemas com o comando yarn server, pode mudar todo o script para:
+
+``` import axios from 'axios';
+  
+    const api = axios.create({
+      baseURL: 'http://localhost:3333'
+     });
+    export default api;
+```
+
 ⚠️ Projeto em desenvolvimento...
 
 ## Updates
@@ -60,7 +64,12 @@ Tornar a docker da página home, responsiva ou apresentar uma forma diferente pa
 
 * Separação dos botões retornar para a home do botão retornar para os cards, ou seja agora são botões distintos
 
+* Usar o comando yarn server para ligar o json server
+
+* E yarn start para ver o projeto em ação
+
+Nova interface
 <p align-self="center">
-<img src="https://raw.githubusercontent.com/KelvinLopes/interfacetemplate/master/screenhots/statusbar.gif" />
+<img src="https://github.com/KelvinLopes/interfacetemplate/blob/master/screenhots/Interfacetemplate.gif" />
 </p>
 
