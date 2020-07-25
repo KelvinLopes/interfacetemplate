@@ -32,7 +32,7 @@ A página de cards, não é mais estática,mas tem suas informações geradas so
 
 As imagens são de exemplo, assim como os assuntos, exceto a Lilira que desenvolvi seu desenho do zero.
 
-**Fonte das imagens: Pixabay**
+**Fonte das imagens: Pixabay e giphy**
 
 
 ## Como usar?
