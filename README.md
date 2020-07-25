@@ -34,7 +34,6 @@ As imagens são de exemplo, assim como os assuntos, exceto a Lilira que desenvol
 
 **Fonte das imagens: Pixabay**
 
-## O que tem que melhorar 🤔 ?
 
 ## Como usar?
 
